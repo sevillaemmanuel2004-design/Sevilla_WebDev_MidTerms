@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Profile — Amielverse</title>
+<link rel="stylesheet" href="../src/css/style.css" />
+</head>
+<body>
+<header class="topbar">
+<a href="#" class="logo" onclick="event.preventDefault()">Amielverse</a>
+<nav>
+<a href="feed.html">Feed</a>
+<a href="profile.html">Profile</a>
+<button id="logoutBtn2" class="btn ghost">Log out</button>
+</nav>
+</header>
+
+
+<main class="layout">
+<aside class="card sidebar">
+<h2 id="profileDisplay">—</h2>
+<p id="profileHandle" class="muted">—</p>
+<p class="muted tiny">Client-only profile view.</p>
+</aside>
+
+<div class="profile-avatar-container">
+  <img id="profileAvatar" src="../assets/img/defaultpfp.png" alt="avatar">
+  <input type="file" id="profileImageInput" accept="image/*">
+  <label for="profileImageInput" class="file-upload-btn">Upload Profile Picture</label>
+  <button id="followBtn" class="btn" style="display:none;">Follow</button>
+</div>
+
+<section class="content">
+<div class="card">
+<h3>Your posts</h3>
+<div id="profilePosts" class="feed"></div>
+</div>
+</section>
+</main>
+
+
+<script src="../src/js/main.js"></script>
+</body>
+</html>

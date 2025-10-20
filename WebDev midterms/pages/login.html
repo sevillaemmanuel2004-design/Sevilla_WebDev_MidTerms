@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Login — Amielverse</title>
+<link rel="stylesheet" href="../src/css/style.css" />
+</head>
+<body>
+<header class="topbar">
+<a href="#" class="logo" onclick="event.preventDefault()">Amielverse</a>
+</header>
+
+
+<main class="card form-card">
+<h2>Log in</h2>
+<form id="loginForm">
+<label>Username
+<input id="loginUsername" required />
+</label>
+<label>Password
+<input id="loginPassword" type="password" required />
+</label>
+<div class="row">
+<button class="btn" type="submit">Sign in</button>
+<a class="btn ghost" href="signup.html">Create account</a>
+</div>
+</form>
+<p id="loginError" class="error" aria-live="polite"></p>
+</main>
+
+
+<script src="../src/js/main.js"></script>
+</body>
+</html>

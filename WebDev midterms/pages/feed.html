@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Feed — A</title>
+  <link rel="stylesheet" href="../src/css/style.css" />
+</head>
+<body>
+  <!-- 🔹 Header -->
+  <header class="topbar">
+    <a href="#" class="logo" onclick="event.preventDefault()">Amielverse</a>
+    <nav>
+      <a id="navFeed" href="feed.html">Feed</a>
+      <a id="navProfile" href="profile.html">Profile</a>
+      <button id="logoutBtn" class="btn ghost">Log out</button>
+    </nav>
+  </header>
+
+  <!-- 🔹 Main Layout -->
+  <main class="layout">
+    <!-- Sidebar -->
+    <aside class="sidebar card">
+     <h3>Welcome</h3>
+     <p id="sidebarUser">—</p>
+     <h4>Following</h4>
+     <div id="sidebarFriends"></div>
+     <p class="muted tiny">This is a frontend-only prototype.</p>
+    </aside>
+   
+    <!-- Main Content -->
+    <section class="content">
+
+      <!-- 🧠 Composer Card -->
+      <div class="card composer">
+        <h3>Create post</h3>
+        <form id="postForm">
+          <textarea id="postText" maxlength="280" placeholder="Share your thoughts (no brainrot allowed!)"></textarea>
+
+          <!-- 📸 Add image input -->
+          <input type="file" id="postImage" accept="image/*">
+          <label for="postImage" class="file-upload-btn">Post Image</label>
+          <div id="imagePreview" class="preview"></div>
+
+          <div class="row">
+            <button class="btn" type="submit">Post</button>
+            <span id="charCount" class="tiny muted">280</span>
+          </div>
+        </form>
+      </div>
+
+      <!-- 📰 Feed Area -->
+      <div id="feed" class="feed"></div>
+
+    </section>
+  </main>
+
+  <!-- 🔹 Scripts -->
+  <script src="../src/js/main.js"></script>
+</body>
+</html>
